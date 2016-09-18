@@ -1,0 +1,71 @@
+
+fastlane_version "1.57.0"
+
+before_all do
+	skip_docs
+end
+
+
+desc "Installs xcode code snippets"
+lane :install do
+    install_dir = File.expand_path(file_template_path)
+        
+    if ! File.exists? install_dir
+      UI.message "Creating File Template Xcode directory #{install_dir}"
+      FileUtils.mkdir_p install_dir
+    end
+
+    src_dir = File.expand_path(params[:source_dir], Fastlane::FastlaneFolder.path)
+    template_folders = Dir.entries(src_dir)
+
+    template_folders.each do |template_folder|
+      template_folder_path = "#{src_dir}/#{template_folder}"
+
+      if File.directory?(template_folder_path) 
+
+        xctemplates = Dir.entries(template_folder_path).select{ |e| File.extname(e) == ".xctemplate"  }
+        
+        install_folder_path = "#{install_dir}/#{template_folder}/"
+        FileUtils.mkdir_p install_folder_path
+
+        xctemplates.each do |xctemplate|
+          src_template_path = "#{template_folder_path}/#{xctemplate}"
+          
+          if File.exists? "#{install_folder_path}/#{xctemplate}"
+            UI.message "Removing template #{xctemplate}"
+            FileUtils.rm_rf "#{install_folder_path}/#{xctemplate}"
+          end
+
+          UI.message "Installing template #{xctemplate} in folder #{install_folder_path}"
+          FileUtils.cp_r src_template_path, install_folder_path
+        end
+
+      end 
+    end
+ end
+
+lane :whatevs do |options|
+	add_template(name: "AA")
+end
+
+desc "Upload all snippets"
+lane :upload_all_snippets do |options| 
+
+	dest_dir = File.expand_path(File.dirname(__FILE__))
+	install_dir = File.expand_path("~/Library/Developer/Xcode/UserData/CodeSnippets")
+	code_snippets =  Dir.entries(install_dir).select{ |e| File.extname(e) == ".codesnippet"  }
+
+	code_snippets.select.each do |snippet|
+	  	src_snippet_path = "#{install_dir}/#{snippet}"
+	  	val = get_info_plist_value(path: src_snippet_path, key: "IDECodeSnippetCompletionPrefix")
+	  	source = get_info_plist_value(path: src_snippet_path, key: "IDECodeSnippetContents")
+	  	dest_path = "#{dest_dir}/snippets/#{val}.codesnippet"
+		FileUtils.cp src_snippet_path, dest_path
+	  	File.open("#{dest_dir}/sources/#{val}.swift", 'w') { |file| file.write(source) }
+	  	UI.message "Copying snippet #{val}"
+	end
+ 	sh "git add ."
+ 	sh "git commit -am \"added all snippets\""
+ 	push_to_git_remote
+
+end

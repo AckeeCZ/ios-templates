@@ -76,11 +76,11 @@ module Fastlane
                                        description: "Installation directory for the templates", # a short description of this parameter
                                        default_value: "~/Library/Developer/Xcode/Templates/File Templates"
                                        ),
-          FastlaneCore::ConfigItem.new(key: :local_dir,
-                                       env_name: "FL_TEMPLATES_LOCAL_DIR",
-                                       description: "Relative path to folder with Templatestemplates in the repo", 
+          FastlaneCore::ConfigItem.new(key: :templates_dir,
+                                       env_name: "FL_TEMPLATES_TEMPLATES_DIR",
+                                       description: "Relative path to folder with templates in the repo", 
                                        default_value: "templates"
-                                       )
+                                       ),
         ]
       end
 

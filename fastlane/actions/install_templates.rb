@@ -20,13 +20,15 @@ module Fastlane
           UI.message "Cloning remote git repo..."
 
           sh "GIT_TERMINAL_PROMPT=0 git clone '#{git_repo}' '#{tmp_dir}' --depth 1 -n #{branch_option}"
-          src_dir = File.expand_path(params[:templates_dir], tmp_dir)
+          sh "cd '#{tmp_dir}' && git checkout #{branch} '#{templates_dir}'"
+
+          src_dir = File.join(tmp_dir, params[:templates_dir])
         else
           #Install from local dir 
           src_dir = File.expand_path(params[:templates_dir])
         end
 
-        install_dir = params[:install_dir]
+        install_dir = File.expand_path(params[:install_dir])
         
         if ! File.exists? install_dir
           UI.message "Creating File Template Xcode directory #{install_dir}"
@@ -49,11 +51,11 @@ module Fastlane
               src_template_path = "#{template_folder_path}/#{xctemplate}"
               
               if File.exists? "#{install_folder_path}/#{xctemplate}"
-                UI.message "Removing template #{xctemplate}"
+                UI.important "Removing template #{xctemplate}"
                 FileUtils.rm_rf "#{install_folder_path}/#{xctemplate}"
               end
 
-              UI.message "Installing template #{xctemplate} in folder #{install_folder_path}"
+              UI.success "Installing template #{xctemplate} in folder #{install_folder_path}"
               FileUtils.cp_r src_template_path, install_folder_path
             end
 

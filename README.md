@@ -1,4 +1,5 @@
-![](http://img.ack.ee/default/image/test/ios_templates_logo.png)
+![ackee|iOSTemplates](https://github.com/AckeeCZ/ios-templates/blob/master/Resources/cover-image.png)
+
 # Ackee iOS Swift Templates for Xcode with Fastlane support
 
 This repository is both library of useful swift templates for Xcode and small yet elegant tool for sharing templates with your colleagues. 

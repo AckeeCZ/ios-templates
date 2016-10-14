@@ -78,3 +78,11 @@ This tool and repo has been opensourced within our `#sharingiscaring` action whe
 
 [1]:	https://github.com/fastlane/fastlane
 [2]:	https://twitter.com/AckeeCZ
+
+## Author
+
+[Ackee](www.ackee.cz) team
+
+## License
+
+iOS templates are available under the MIT license. See the LICENSE file for more info.

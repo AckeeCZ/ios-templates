@@ -76,9 +76,6 @@ If you would like to use the fastfile actions and repo scheme within your team w
 ## Sharing is caring
 This tool and repo has been opensourced within our `#sharingiscaring` action when we have decided to opensource our internal projects
 
-[1]:	https://github.com/fastlane/fastlane
-[2]:	https://twitter.com/AckeeCZ
-
 ## Author
 
 [Ackee](www.ackee.cz) team
@@ -86,3 +83,6 @@ This tool and repo has been opensourced within our `#sharingiscaring` action whe
 ## License
 
 iOS templates are available under the MIT license. See the LICENSE file for more info.
+
+[1]:	https://github.com/fastlane/fastlane
+[2]:	https://twitter.com/AckeeCZ

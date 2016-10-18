@@ -7,27 +7,31 @@
 //
 
 import UIKit
+import ReactiveSwift
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_viewSubclass___ {
-    
-    //MARK: View Model
-    var viewModel: ___VARIABLE_viewModel___!
-    
-    //MARK: Initialization
-    init(viewModel: ___VARIABLE_viewModel___) {
-        super.init(frame: CGRectZero)
+
+    //MARK: View model
+
+    let viewModel: ___VARIABLE_viewModel___
+
+    //MARK: Initializers
+
+    required init(viewModel: ___VARIABLE_viewModel___) {
         self.viewModel = viewModel
+
+        super.init(frame: .zero)
+
         setupBindings()
     }
-    
-    //MARK:Bindings
-    func setupBindings(){
-        
-    }
-    
-    //MARK: Other
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
 
+    // MARK: Helpers
+
+    private func setupBindings(){
+
+    }
+}

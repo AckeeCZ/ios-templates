@@ -7,43 +7,44 @@
 //
 
 import UIKit
-import ReactiveCocoa
+import ReactiveSwift
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
-    
-    //MARK: Dependencies
-    let viewModel:___VARIABLE_viewModel___
-    
-    
-    //MARK: Initialization
-    required init(viewModel:___VARIABLE_viewModel___){
+
+    // MARK: Dependencies
+
+    let viewModel: ___VARIABLE_viewModel___
+
+    // MARK: Initializers
+
+    required init(viewModel: ViewModeling){
         self.viewModel = viewModel
+
         super.init(nibName: nil, bundle: nil)
     }
-    
-    //MARK: Bindings
-    func setupBindings(){
-        
-    }
-    
-    //MARK: Life cycle
-    override func loadView(){
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupBindings()
-    }
-    
-    
-    //MARK: Other
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+
+    // MARK: View life cycle
+
+    override func loadView(){
+        super.loadView()
+
+
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setupBindings()
+    }
+
+    // MARK: Helpers
+
+    private func setupBindings() {
+
     }
 
 }

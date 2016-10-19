@@ -7,28 +7,30 @@
 //
 
 import UIKit
-import ReactiveCocoa
+import ReactiveSwift
 
 class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_cellSubclass___ {
-    
-    //MARK: View Model
-    var viewModel = MutableProperty<___VARIABLE_viewModel___?>(nil)
-    
-    //MARK: Initialization
+
+    // MARK: View model
+
+    let viewModel = MutableProperty<___VARIABLE_viewModel___?>(nil)
+
+    // MARK: Initializers
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+
         setupBindings()
     }
-    
-    //MARK:Bindings
-    func setupBindings(){
-        let vm = viewModel.producer.ignoreNil()
-        //label.rac_text <~ vm.flatMap(.Latest){ $0.myProperty.producer }.map { ... }
-    }
-    
-    //MARK: Other
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
 
+    // MARK: Helpers
+
+    private func setupBindings() {
+        let vm = viewModel.producer.ignoreNil()
+        //label.rac_text <~ vm.flatMap(.Latest){ $0.myProperty.producer }.map { ... }
+    }
+}

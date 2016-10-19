@@ -6,21 +6,21 @@
 //___COPYRIGHT___
 //
 
-import ReactiveCocoa
+import ReactiveSwift
 
-protocol ___FILEBASENAMEASIDENTIFIER___ing{
-    
+protocol ___FILEBASENAMEASIDENTIFIER___ing {
+
 }
 
 class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing {
-    
-    //MARK: Initialization
+
+    // MARK: Initializers
     required init(){
-        self.setupBindings()
+        setupBindings()
     }
-    
-    //MARK: Bindings
-    func setupBindings(){
-        
+
+    // MARK: Helpers
+    private func setupBindings() {
+
     }
 }

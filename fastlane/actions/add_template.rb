@@ -9,24 +9,24 @@ module Fastlane
         dest_dir = File.expand_path(File.dirname(__FILE__))
         install_dir = File.expand_path(params[:install_dir])
         name = params[:name]
-        
+
         templates = Dir.glob("#{install_dir}/**/*.xctemplate")
-        
+
         if !name
           UI.message "#{templates.count} templates found in #{install_dir}"
           template_path = File.expand_path(UI.select("Select template: ", templates.map { |template| relative_path(template, install_dir) } ), install_dir)
-        else 
+        else
           matching_templates = templates.select { |template| File.basename(template, ".xctemplate") == name }
 
           if matching_templates.count == 0
             UI.user_error!("No template with the name #{name} found in #{install_dir}")
-          elsif matching_templates.count > 1 
+          elsif matching_templates.count > 1
             UI.message "Multiple templates with the name #{name} found"
             template_path = UI.select("Select template: ", matching_templates)
           elsif matching_templates.count == 1
-            if !UI.confirm("Found template in #{matching_templates[0]}, do you wish to add it?}") 
+            if !UI.confirm("Found template in #{matching_templates[0]}, do you wish to add it?}")
               return false
-            else 
+            else
               template_path = matching_templates[0]
             end
           end
@@ -35,8 +35,8 @@ module Fastlane
         relative_path = relative_path(template_path, install_dir)
         destination_path =  params[:templates_dir] + "/" + relative_path
 
-        if File.exists? destination_path 
-          if UI.confirm("Template #{relative_path} already exists, do you wish to replace it?") 
+        if File.exists? destination_path
+          if UI.confirm("Template #{relative_path} already exists, do you wish to replace it?")
             FileUtils.remove_dir(destination_path)
           else
             return false
@@ -49,8 +49,8 @@ module Fastlane
 
         if UI.confirm("Successfully added #{relative_path}, do you wish to commit?")
           sh "git commit -am \"added template #{relative_path}\""
-        end 
-        
+        end
+
       end
 
       def self.relative_path(path, relative_to)
@@ -78,7 +78,7 @@ module Fastlane
                                        ),
           FastlaneCore::ConfigItem.new(key: :templates_dir,
                                        env_name: "FL_TEMPLATES_TEMPLATES_DIR",
-                                       description: "Relative path to folder with templates in the repo", 
+                                       description: "Relative path to folder with templates in the repo",
                                        default_value: "templates"
                                        ),
         ]

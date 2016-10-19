@@ -33,7 +33,7 @@ module Fastlane
         end
 
         relative_path = relative_path(template_path, install_dir)
-        destination_path =  params[:local_dir] + "/" + relative_path
+        destination_path =  params[:templates_dir] + "/" + relative_path
 
         if File.exists? destination_path 
           if UI.confirm("Template #{relative_path} already exists, do you wish to replace it?") 

@@ -17,7 +17,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
 
     // MARK: Initializers
 
-    required init(viewModel: ViewModeling){
+    required init(viewModel: ___VARIABLE_viewModel___) {
         self.viewModel = viewModel
 
         super.init(nibName: nil, bundle: nil)
@@ -29,9 +29,8 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
 
     // MARK: View life cycle
 
-    override func loadView(){
+    override func loadView() {
         super.loadView()
-
 
     }
 

@@ -8,19 +8,33 @@
 
 import ReactiveSwift
 
-protocol ___FILEBASENAMEASIDENTIFIER___ing {
-
+// MARK: Protocols
+protocol ___FILEBASENAMEASIDENTIFIER___Inputs {
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing {
+protocol ___FILEBASENAMEASIDENTIFIER___Outputs {
+}
 
+protocol ___FILEBASENAMEASIDENTIFIER___Actions {
+}
+
+protocol ___FILEBASENAMEASIDENTIFIER___ing {
+    var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { get }
+    var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { get }
+    var actions: ___FILEBASENAMEASIDENTIFIER___Actions { get }
+}
+
+// MARK: ___FILEBASENAMEASIDENTIFIER___
+final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___Inputs, ___FILEBASENAMEASIDENTIFIER___Outputs, ___FILEBASENAMEASIDENTIFIER___Actions {
+    private let (lifetime, token) = Lifetime.make()
+    
+    var inputs: ___FILEBASENAMEASIDENTIFIER___Inputs { return self }
+    var outputs: ___FILEBASENAMEASIDENTIFIER___Outputs { return self }
+    var actions: ___FILEBASENAMEASIDENTIFIER___Actions { return self }
+    
+    // MARK: Dependencies
+    
     // MARK: Initializers
-    required init(){
-        setupBindings()
-    }
-
-    // MARK: Helpers
-    private func setupBindings() {
-
+    required init() {
     }
 }

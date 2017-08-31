@@ -9,7 +9,7 @@
 import UIKit
 import ReactiveSwift
 
-class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
+final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
 
     // MARK: Dependencies
 

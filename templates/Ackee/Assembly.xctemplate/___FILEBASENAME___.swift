@@ -8,9 +8,9 @@
 
 import Swinject
 
-class ___FILEBASENAMEASIDENTIFIER___: AssemblyType {
+class ___FILEBASENAMEASIDENTIFIER___: Assembly {
     
-    func assemble(container: Container){
+    func assemble(container: Container) {
         //MARK: Models
         
         //MARK: View models

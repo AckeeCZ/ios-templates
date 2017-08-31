@@ -15,7 +15,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___ing {
 class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing {
 
     // MARK: Initializers
-    required init(){
+    required init() {
         setupBindings()
     }
 

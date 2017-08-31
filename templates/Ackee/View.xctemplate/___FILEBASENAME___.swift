@@ -31,8 +31,7 @@ class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_viewSubclass___ {
 
     // MARK: Helpers
 
-    private func setupBindings(){
-        let vm = viewModel.producer.ignoreNil()
-        //label.rac_text <~ vm.flatMap(.Latest){ $0.myProperty.producer }.map { ... }
+    private func setupBindings() {
+
     }
 }

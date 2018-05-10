@@ -13,11 +13,11 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
 
     // MARK: Dependencies
 
-    let viewModel: ___VARIABLE_productName___ViewModeling
+    private let viewModel: ___VARIABLE_productName___ViewModeling
 
     // MARK: Initializers
 
-    required init(viewModel: ___VARIABLE_productName___ViewModeling) {
+    init(viewModel: ___VARIABLE_productName___ViewModeling) {
         self.viewModel = viewModel
 
         super.init(nibName: nil, bundle: nil)

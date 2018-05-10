@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
+//  ___COPYRIGHT___
 //
 
 import UIKit
@@ -13,11 +13,11 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
 
     // MARK: Dependencies
 
-    let viewModel: ___VARIABLE_viewModel___
+    private let viewModel: ___VARIABLE_productName___ViewModeling
 
     // MARK: Initializers
 
-    required init(viewModel: ___VARIABLE_viewModel___) {
+    init(viewModel: ___VARIABLE_productName___ViewModeling) {
         self.viewModel = viewModel
 
         super.init(nibName: nil, bundle: nil)

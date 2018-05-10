@@ -20,14 +20,16 @@ extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIF
     var actions: ___FILEBASENAMEASIDENTIFIER___ingActions { return self }
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
+final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
 
     // MARK: Initializers
-    required init() {
+
+    init() {
         setupBindings()
     }
 
     // MARK: Helpers
+    
     private func setupBindings() {
 
     }

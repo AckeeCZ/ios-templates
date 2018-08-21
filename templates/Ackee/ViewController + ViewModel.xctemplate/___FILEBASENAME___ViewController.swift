@@ -9,7 +9,13 @@
 import UIKit
 import ReactiveSwift
 
-final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
+protocol ___VARIABLE_productName___FlowDelegate: class {
+
+}
+
+final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubclass___ {
+
+    weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
 
     // MARK: Dependencies
 

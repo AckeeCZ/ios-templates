@@ -21,10 +21,11 @@ extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIF
 }
 
 final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
+    typealias Dependencies = HasNoDependency
 
     // MARK: Initializers
 
-    init() {
+    init(dependencies: Dependencies) {
         setupBindings()
     }
 

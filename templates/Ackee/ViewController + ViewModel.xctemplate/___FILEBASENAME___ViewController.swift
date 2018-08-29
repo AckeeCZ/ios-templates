@@ -17,23 +17,21 @@ final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubc
 
     weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
 
-    // MARK: Dependencies
-
     private let viewModel: ___VARIABLE_productName___ViewModeling
 
-    // MARK: Initializers
+    // MARK: - Initialization
 
     init(viewModel: ___VARIABLE_productName___ViewModeling) {
         self.viewModel = viewModel
 
-        super.init(nibName: nil, bundle: nil)
+        super.init()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: View life cycle
+    // MARK: - Controller lifecycle
 
     override func loadView() {
         super.loadView()
@@ -46,7 +44,7 @@ final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubc
         setupBindings()
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     private func setupBindings() {
 

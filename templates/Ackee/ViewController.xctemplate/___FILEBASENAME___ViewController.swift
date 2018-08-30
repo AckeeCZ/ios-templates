@@ -9,25 +9,29 @@
 import UIKit
 import ReactiveSwift
 
-final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
+protocol ___VARIABLE_productName___FlowDelegate: class {
 
-    // MARK: Dependencies
+}
+
+final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubclass___ {
+
+    weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
 
     private let viewModel: ___VARIABLE_viewModel___
 
-    // MARK: Initializers
+    // MARK: - Initialization
 
     init(viewModel: ___VARIABLE_viewModel___) {
         self.viewModel = viewModel
 
-        super.init(nibName: nil, bundle: nil)
+        super.init()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: View life cycle
+    // MARK: - Controller lifecycle
 
     override func loadView() {
         super.loadView()
@@ -40,7 +44,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_controllerSubclass___ {
         setupBindings()
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
 
     private func setupBindings() {
 

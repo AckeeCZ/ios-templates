@@ -21,14 +21,15 @@ extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIF
 }
 
 final class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
+    typealias Dependencies = HasNoDependency
 
-    // MARK: Initializers
+    // MARK: - Initialization
 
-    init() {
+    init(dependencies: Dependencies) {
         setupBindings()
     }
 
-    // MARK: Helpers
+    // MARK: - Helpers
     
     private func setupBindings() {
 

@@ -1,60 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>AllowedTypes</key>
-        <array>
-            <string>public.swift-source</string>
-        </array>
-        <key>MainTemplateFiles</key>
-        <string>___FILEBASENAME___.swift</string>
-        <key>Kind</key>
-        <string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
-        <key>Description</key>
-        <string>Creates both ViewController and ViewModel. It also injects the ViewModel to the ViewController.</string>
-        <key>Summary</key>
-        <string>Creates both ViewController and ViewModel. It also injects the ViewModel to the ViewController.</string>
-        <key>SortOrder</key>
-        <integer>2</integer>
-        <key>DefaultCompletionName</key>
-        <string>ViewController + ViewModel</string>
-        <key>Platforms</key>
-        <array>
-            <string>com.apple.platform.iphoneos</string>
-        </array>
-        <key>Options</key>
-        <array>
-            <dict>
-                <key>Description</key>
-                <string>Root name of the ViewController and the ViewModel.</string>
-                <key>Identifier</key>
-                <string>productName</string>
-                <key>Name</key>
-                <string>ViewController/ViewModel root name:</string>
-                <key>Default</key>
-                <string>Base</string>
-                <key>NotPersisted</key>
-                <true />
-                <key>Required</key>
-                <true />
-                <key>Type</key>
-                <string>text</string>
-            </dict>
-            <dict>
-                <key>Description</key>
-                <string>Name of some bullshit</string>
-                <key>Identifier</key>
-                <string>controllerSubclass</string>
-                <key>Name</key>
-                <string>ViewController is subclass of:</string>
-                <key>Description</key>
-                <string>What class to subclass new ViewController</string>
-                <key>Type</key>
-                <string>text</string>
-                <key>Default</key>
-                <string>BaseViewController</string>
-                <key>NotPersisted</key>
-                <true />
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>MainTemplateFiles</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Creates both ViewController and ViewModel. It also injects the ViewModel to the ViewController.</string>
+	<key>Summary</key>
+	<string>Creates both ViewController and ViewModel. It also injects the ViewModel to the ViewController.</string>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>DefaultCompletionName</key>
+	<string>ViewController + ViewModel</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Root name of the ViewController and the ViewModel.</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>ViewController/ViewModel root name:</string>
+			<key>Default</key>
+			<string>Base</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>What class to subclass new ViewController</string>
+			<key>Identifier</key>
+			<string>controllerSubclass</string>
+			<key>Name</key>
+			<string>ViewController is subclass of:</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>BaseViewController</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>What class to subclass new ViewModel</string>
+			<key>Identifier</key>
+			<string>modelSubclass</string>
+			<key>Name</key>
+			<string>ViewModel is subclass of:</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>BaseViewModel</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
 </plist>

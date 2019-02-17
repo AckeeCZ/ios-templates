@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+    <dict>
+        <key>AllowedTypes</key>
+        <array>
+            <string>public.swift-source</string>
+        </array>
+        <key>MainTemplateFiles</key>
+        <string>___FILEBASENAME___.swift</string>
+        <key>Kind</key>
+        <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+        <key>Description</key>
+        <string>A class implementing a APIService</string>
+        <key>Summary</key>
+        <string>A class implementing a APIService</string>
+        <key>SortOrder</key>
+        <integer>2</integer>
+        <key>DefaultCompletionName</key>
+        <string>APIService</string>
+        <key>Platforms</key>
+        <array>
+            <string>com.apple.platform.iphoneos</string>
+        </array>
+        <key>Options</key>
+        <array>
+            <dict>
+                <key>Description</key>
+                <string>Name of the APIService</string>
+                <key>Identifier</key>
+                <string>productName</string>
+                <key>Name</key>
+                <string>APIService name:</string>
+                <key>Default</key>
+                <string>APIService</string>
+                <key>NotPersisted</key>
+                <true />
+                <key>Required</key>
+                <true />
+                <key>Type</key>
+                <string>text</string>
+            </dict>
+        </array>
+    </dict>
+</plist>

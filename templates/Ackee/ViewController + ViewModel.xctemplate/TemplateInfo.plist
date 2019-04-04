@@ -31,42 +31,12 @@
 			<string>productName</string>
 			<key>Name</key>
 			<string>ViewController/ViewModel root name:</string>
-			<key>Default</key>
-			<string>Base</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>text</string>
-		</dict>
-		<dict>
-			<key>Description</key>
-			<string>What class to subclass new ViewController</string>
-			<key>Identifier</key>
-			<string>controllerSubclass</string>
-			<key>Name</key>
-			<string>ViewController is subclass of:</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>Default</key>
-			<string>BaseViewController</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Description</key>
-			<string>What class to subclass new ViewModel</string>
-			<key>Identifier</key>
-			<string>modelSubclass</string>
-			<key>Name</key>
-			<string>ViewModel is subclass of:</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>Default</key>
-			<string>BaseViewModel</string>
-			<key>NotPersisted</key>
-			<true/>
 		</dict>
 	</array>
 </dict>

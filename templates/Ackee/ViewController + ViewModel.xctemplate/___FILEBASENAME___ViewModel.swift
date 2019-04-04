@@ -7,6 +7,7 @@
 //
 
 import ReactiveSwift
+import ACKategories
 
 protocol ___FILEBASENAMEASIDENTIFIER___ingActions {
 
@@ -20,7 +21,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIF
     var actions: ___FILEBASENAMEASIDENTIFIER___ingActions { return self }
 }
 
-final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_modelSubclass___, ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
+final class ___FILEBASENAMEASIDENTIFIER___: Base.ViewModel, ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
     typealias Dependencies = HasNoDependency
 
     // MARK: - Initialization

@@ -64,7 +64,7 @@
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>BaseViewModel</string>
+			<string>Base.ViewModel</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>

@@ -8,28 +8,15 @@
 
 import UIKit
 import ReactiveSwift
+import ACKategories
 
 protocol ___VARIABLE_productName___FlowDelegate: class {
 
 }
 
-final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubclass___ {
+final class ___VARIABLE_productName___ViewController: Base.ViewController<___VARIABLE_productName___ViewModeling> {
 
     weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
-
-    private let viewModel: ___VARIABLE_viewModel___
-
-    // MARK: - Initialization
-
-    init(viewModel: ___VARIABLE_viewModel___) {
-        self.viewModel = viewModel
-
-        super.init()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
     // MARK: - Controller lifecycle
 

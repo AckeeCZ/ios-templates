@@ -14,9 +14,25 @@ protocol ___VARIABLE_productName___FlowDelegate: class {
 
 }
 
-final class ___VARIABLE_productName___ViewController: Base.ViewControllerNoVM {
+final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubclass___ {
 
     weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
+
+    private let viewModel: ___VARIABLE_viewModel___
+
+    // MARK: - Initialization
+
+    init(viewModel: ___VARIABLE_viewModel___) {
+        self.viewModel = viewModel
+
+        super.init()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+
 
     // MARK: - Controller lifecycle
 

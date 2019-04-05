@@ -40,11 +40,39 @@
 		</dict>
 		<dict>
 			<key>Description</key>
-			<string>Should new ViewController include viewModel?</string>
+			<string>What class to subclass in the new file</string>
 			<key>Identifier</key>
-			<string>hasViewModel</string>
+			<string>controllerSubclass</string>
 			<key>Name</key>
-			<string>Include viewModel</string>
+			<string>Subclass of:</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>BaseViewController</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Name of the View Model Protocol</string>
+			<key>Identifier</key>
+			<string>viewModel</string>
+			<key>Name</key>
+			<string>View model protocol name:</string>
+			<key>Default</key>
+			<string>ViewModeling</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Is BaseViewController generic?</string>
+			<key>Identifier</key>
+			<string>isGeneric</string>
+			<key>Name</key>
+			<string>Is generic</string>
 			<key>Type</key>
 			<string>checkbox</string>
 		</dict>

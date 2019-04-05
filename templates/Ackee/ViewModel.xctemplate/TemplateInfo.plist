@@ -40,6 +40,21 @@
 			<key>Type</key>
 			<string>text</string>
 		</dict>
+		<dict>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Identifier</key>
+			<string>modelSubclass</string>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Base.ViewModel</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+
 	</array>
 </dict>
 </plist>

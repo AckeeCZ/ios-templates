@@ -14,7 +14,7 @@ protocol ___VARIABLE_productName___FlowDelegate: class {
 
 }
 
-final class ___VARIABLE_productName___ViewController: Base.ViewController<___VARIABLE_productName___ViewModeling> {
+final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubclass___<___VARIABLE_productName___ViewModeling> {
 
     weak var flowDelegate: ___VARIABLE_productName___FlowDelegate?
 

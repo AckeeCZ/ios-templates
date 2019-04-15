@@ -10,7 +10,7 @@ import ReactiveSwift
 import ACKategories
 
 protocol ___FILEBASENAMEASIDENTIFIER___ingActions {
-	
+
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___ing {
@@ -22,6 +22,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIF
 }
 
 final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_modelSubclass___, ___FILEBASENAMEASIDENTIFIER___ing, ___FILEBASENAMEASIDENTIFIER___ingActions {
+
     typealias Dependencies = HasNoDependency
 
     // MARK: - Initialization

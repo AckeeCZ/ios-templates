@@ -14,7 +14,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___ingActions {
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___ing {
-	var actions: ___FILEBASENAMEASIDENTIFIER___ingActions { get }
+    var actions: ___FILEBASENAMEASIDENTIFIER___ingActions { get }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___ing where Self: ___FILEBASENAMEASIDENTIFIER___ingActions {

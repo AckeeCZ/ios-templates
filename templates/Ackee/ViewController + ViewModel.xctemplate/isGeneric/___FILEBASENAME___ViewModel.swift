@@ -29,13 +29,5 @@ final class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_modelSubclass___, ___FIL
 
     init(dependencies: Dependencies) {
         super.init()
-
-        setupBindings()
-    }
-
-    // MARK: - Helpers
-    
-    private func setupBindings() {
-
     }
 }

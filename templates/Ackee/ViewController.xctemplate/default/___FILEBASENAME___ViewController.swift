@@ -10,7 +10,7 @@ import UIKit
 import ReactiveSwift
 import ACKategories
 
-protocol ___VARIABLE_productName___FlowDelegate: class {
+protocol ___VARIABLE_productName___FlowDelegate: AnyObject {
 
 }
 
@@ -31,8 +31,6 @@ final class ___VARIABLE_productName___ViewController: ___VARIABLE_controllerSubc
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-
 
     // MARK: - Controller lifecycle
 

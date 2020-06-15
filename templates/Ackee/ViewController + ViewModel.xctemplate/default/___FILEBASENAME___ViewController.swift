@@ -10,7 +10,7 @@ import UIKit
 import ReactiveSwift
 import ACKategories
 
-protocol ___VARIABLE_productName___FlowDelegate: class {
+protocol ___VARIABLE_productName___FlowDelegate: AnyObject {
 
 }
 

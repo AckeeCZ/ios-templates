@@ -31,7 +31,7 @@ As templates are installed directly to shared Xcode folder, it's tricky for this
 
 | Swift Version | branch |
 | ------------- | ------ |
-| 3.X           | master |
+| 3+            | master |
 | 2.X           | swift2 |
 
 To install Swift 2 compatible version use

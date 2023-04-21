@@ -41,7 +41,7 @@ struct OwnAccountsTransactionView_Preview: PreviewProvider {
                         reducer: ___VARIABLE_reducer___Reducer,
                         environment: .init()
                     )
-        )    
+	)    
 	}
 }
 #endif

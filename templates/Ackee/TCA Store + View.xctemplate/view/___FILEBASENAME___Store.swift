@@ -89,4 +89,3 @@ public let ___VARIABLE_reducer___Reducer =
 ___VARIABLE_moduleName___Reducer.combine(
     ___VARIABLE_reducer___MainReducer
 )
-

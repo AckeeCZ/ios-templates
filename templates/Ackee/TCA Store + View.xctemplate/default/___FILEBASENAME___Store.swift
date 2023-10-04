@@ -30,7 +30,6 @@ public struct ___VARIABLE_moduleName___Environment {
 
 public struct ___VARIABLE_moduleName___ScreenState: Equatable {
     
-    
     // MARK: - Initializers
     
     public init() {}
@@ -47,25 +46,17 @@ public struct ___VARIABLE_moduleName___State: Equatable {
     }
     
     public subscript<Value>(
-        dynamicMember keyPath:
-        WritableKeyPath<___VARIABLE_moduleName___ScreenState, Value>
-    )
-    -> Value
-    {
+        dynamicMember keyPath: WritableKeyPath<___VARIABLE_moduleName___ScreenState, Value>
+    ) -> Value {
         get { screenState[keyPath: keyPath] }
         set { screenState[keyPath: keyPath] = newValue }
     }
     
-    public subscript<Value>(dynamicMember keyPath:
-                            KeyPath<___VARIABLE_moduleName___ScreenState, Value>)
-    -> Value
-    {
+    public subscript<Value>(
+        dynamicMember keyPath: KeyPath<___VARIABLE_moduleName___ScreenState, Value>
+    ) -> Value {
         screenState[keyPath: keyPath]
     }
-}
-
-extension ___VARIABLE_moduleName___State {
-    
 }
 
 // MARK: - Action
@@ -82,6 +73,7 @@ ___VARIABLE_moduleName___Reducer {
     action,
     environment in
     switch action {}
+    
     return .none
 }
 

@@ -29,7 +29,6 @@ public struct ___VARIABLE_moduleName___View: View {
 // MARK: - Previews
 
 #if DEBUG
-@available(iOSApplicationExtension, unavailable)
 struct ___VARIABLE_moduleName___View_Preview: PreviewProvider {
     static var previews: some View {
         ___VARIABLE_moduleName___View(

@@ -29,17 +29,15 @@ public struct ___VARIABLE_moduleName___View: View {
 // MARK: - Previews
 
 #if DEBUG
-struct ___VARIABLE_moduleName___View_Preview: PreviewProvider {
-    static var previews: some View {
-        ___VARIABLE_moduleName___View(
-            store: .init(
-                initialState: .init(
-                    screenState: .init()
-                ),
-                reducer: ___VARIABLE_reducer___Reducer,
-                environment: .init()
-            )
+#Preview {
+    ___VARIABLE_moduleName___View(
+        store: .init(
+            initialState: .init(
+                screenState: .init()
+            ),
+            reducer: ___VARIABLE_reducer___Reducer,
+            environment: .init()
         )
-    }
+    )
 }
 #endif
